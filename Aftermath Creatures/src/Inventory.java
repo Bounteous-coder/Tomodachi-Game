@@ -47,17 +47,6 @@ public class Inventory {
 
             inventoryPanel.add(cellPanel);
         }
-        // Add labels for each inventory slot
-        // inventoryPanel.add(createInventoryLabel("Food", "path/to/food_icon.png")); // Replace with actual paths
-        //inventoryPanel.add(new JLabel("Item 1")); // Empty slot
-        //inventoryPanel.add(new JLabel("Item 2")); // Empty slot
-        //inventoryPanel.add(createInventoryLabel("Gift", "path/to/gift_icon.png")); // Replace with actual paths
-        //inventoryPanel.add(new JLabel("Item 3")); // Empty slot
-        //inventoryPanel.add(new JLabel("Item 4")); // Empty slot
-        //inventoryPanel.add(createInventoryLabel("Meds", "path/to/med_icon.png")); // Replace with actual paths
-        //inventoryPanel.add(new JLabel("Item 5")); // Empty slot
-        //inventoryPanel.add(new JLabel("Item 6")); // Empty slot 
-
         
         // Bottom panel for footer (empty for now)
         JPanel footerPanel = new JPanel();
