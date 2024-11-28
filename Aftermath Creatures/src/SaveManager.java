@@ -20,7 +20,6 @@ public class SaveManager {
             e.printStackTrace();
         }
     }
-    
 
     // Method to load game data from a file
     public static String loadGame(int slot) {
