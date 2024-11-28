@@ -2,8 +2,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Pet {
-
-	//Testinggggggg
 	
     private String name;
     private int health;
