@@ -2,7 +2,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Pet {
-
+	
     private String name;
     private int health;
     private int fullness;
