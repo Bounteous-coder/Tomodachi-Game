@@ -4,6 +4,16 @@ import java.io.*;
 import java.awt.*;
 public class MainGameScreen extends Screen{
 	
+	static JLabel curTime;
+	static JLabel petName;
+	static JLabel money;
+	static JLabel score;
+	static JLabel health;
+	static JLabel sleep;
+	static JLabel fullness;
+	static JLabel happiness;
+
+	
 	private Pet pet;
 	
 	public MainGameScreen(Pet pet) {
