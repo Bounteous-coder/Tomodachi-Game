@@ -3,7 +3,17 @@ import java.awt.event.*;
 import java.io.*;
 import java.awt.*;
 public class MainGameScreen extends Screen{
-	public MainGameScreen() {
+	
+	private Pet pet;
+	
+	public MainGameScreen(Pet pet) {
+		
+		if (pet == null) {
+	        throw new IllegalArgumentException("Pet cannot be null in MainGameScreen");
+	    }
+		
+		this.pet = pet; // Assign the pet instance
+		
 		//set layout, setup subpanels
 		this.panel.setLayout(new BorderLayout());
 		JPanel header = new JPanel();
@@ -87,5 +97,22 @@ public class MainGameScreen extends Screen{
 		footer.add(market);
 		footer.add(minigames);
 		footer.add(menu);
+		
+		// Setup keyboard shortcuts
+        setupKeyboardShortcuts();
 	}
+	
+	/**
+     * Sets up both global and gameplay-specific keyboard shortcuts.
+     */
+    private void setupKeyboardShortcuts() {
+        // Set up global shortcuts (e.g., ESCAPE to open the settings menu)
+        KeyboardShortcutManager.setupGlobalShortcuts(this.panel);
+
+        // Set up gameplay-specific shortcuts (e.g., F, S, V, E for pet interactions)
+        KeyboardShortcutManager.setupGameplayShortcuts(this.panel, pet);
+
+        // Ensure the panel gains focus for shortcuts
+        this.panel.requestFocusInWindow();
+    }
 }
