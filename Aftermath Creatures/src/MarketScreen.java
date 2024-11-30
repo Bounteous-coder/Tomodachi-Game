@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class MarketScreen {
 public class MarketScreen extends Screen {
     public MarketScreen() {
         JLabel title = new JLabel("Market");
@@ -106,4 +105,4 @@ public class MarketScreen extends Screen {
     }
     
 }
-}
+
